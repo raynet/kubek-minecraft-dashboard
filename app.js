@@ -49,7 +49,7 @@ if (cfg['internet-access'] == true) {
     }
   };
 }
-const io = require("socket.io")(112, socket_options);
+const io = require("socket.io")(3443, socket_options);
 
 const request = require('request');
 
@@ -242,7 +242,7 @@ updater.checkForUpdates(function (upd) {
     link = 'http://localhost:' + port;
     console.log(additional.getTimeFormatted(), "Kubek listening on", link);
   });
-  console.log(additional.getTimeFormatted(), "Socket.io listening on", 112);
+  console.log(additional.getTimeFormatted(), "Socket.io listening on", 3443);
 });
 
 setInterval(function () {
