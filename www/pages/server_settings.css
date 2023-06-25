@@ -1,0 +1,7 @@
+.ssettings-container table td {
+  text-align: end;
+}
+
+.ssettings-container table input[type="text"] {
+  width: 100%;
+}
